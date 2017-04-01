@@ -1,0 +1,19 @@
+
+
+#include "automate.h"
+#include "outils.h"
+#include "fifo.h"
+
+#include <signal.h>
+#include <errno.h>
+
+Automate * teste_union(Automate * aut1 , Automate * aut2){
+   return Automate * auto = creer_union_des_automates(aut1 , aut2);
+}
+
+int main(){
+Automate * a = creer_automate();
+Automate * b = creer_automate();
+print_automate(teste_union(a , b))
+return 0;
+}
